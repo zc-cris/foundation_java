@@ -2,7 +2,7 @@ package recursion;
 
 
 /**
- * 两种方式解决 leetcode 上的删除链表中所有的指定元素
+ * 使用递归的方式删除链表中指定的所有相同元素
  *
  * @author zc-cris
  * @version 1.0
@@ -26,7 +26,7 @@ public class LinkRepeatedRecursionDelete {
      *
      * @param head 头节点
      * @param x    指定要删除的元素
-     * @return
+     * @return 删除完所有指定元素的链表的头节点
      */
     private static LinkNode recursion1(LinkNode head, int x) {
         if (head == null) {

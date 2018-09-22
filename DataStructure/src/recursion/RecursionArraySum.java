@@ -1,7 +1,7 @@
 package recursion;
 
 /**
- * TODO
+ * 使用递归计算数组内所有元素之和
  *
  * @author zc-cris
  * @version 1.0
