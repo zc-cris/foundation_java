@@ -11,9 +11,9 @@ import java.util.EmptyStackException;
 @SuppressWarnings({"ManualArrayCopy", "unused", "unchecked"})
 public class ArrayStack<E> implements Stack<E> {
 
-    private E[] arrays;
-    private static int size = 10;
     private static final int DEFAULT_CAPACITY = 10;
+    private static int size = 10;
+    private E[] arrays;
 
     public ArrayStack() {
         this(DEFAULT_CAPACITY);

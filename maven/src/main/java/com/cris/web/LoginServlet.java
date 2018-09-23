@@ -1,4 +1,4 @@
-package com.cris.jdbc;
+package com.cris.web;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -12,17 +12,20 @@ import java.io.IOException;
  */
 @WebServlet(name = "LoginServlet",urlPatterns = "/login")
 public class LoginServlet extends HttpServlet {
+
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("utf-8");
-        response.setHeader("Content-type","text/html;charset=utf-8");
-//        request.getRequestDispatcher("/pages/success.html").forward(request,response);
-        response.getWriter().println("我觉得ojibak");
+        String username = request.getParameter("username");
+        String pwd = request.getParameter("pwd");
+
+
+        request.getRequestDispatcher("/pages/success.html").forward(request, response);
+
     }
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doPost(request, response);
-
     }
 }

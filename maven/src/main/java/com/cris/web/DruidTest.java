@@ -1,4 +1,4 @@
-package com.cris.jdbc;
+package com.cris.web;
 
 import com.alibaba.druid.pool.DruidDataSourceFactory;
 import org.junit.Test;
